@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "build-storybook": "storybook build",
+    "deploy-storybook": "npm run build-storybook && gh-pages -d storybook-static",
+    "storybook": "storybook dev -p 6006"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^8.6.11",
+    "@storybook/addon-interactions": "^8.6.11",
+    "@storybook/addon-links": "^8.6.11",
+    "@storybook/blocks": "^8.6.11",
+    "@storybook/react": "^8.6.11",
+    "@storybook/react-vite": "^8.6.11",
+    "@storybook/testing-library": "^0.2.1",
+    "storybook": "^8.6.11"
+  }
+}
