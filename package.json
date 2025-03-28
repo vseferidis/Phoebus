@@ -2,7 +2,8 @@
   "scripts": {
     "build-storybook": "storybook build",
     "deploy-storybook": "npm run build-storybook && gh-pages -d storybook-static",
-    "storybook": "storybook dev -p 6006"
+    "storybook": "storybook dev -p 6006",
+    "chromatic": "npx chromatic --project-token=chpt_dffd2b240d02ade"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^8.6.11",
@@ -12,6 +13,10 @@
     "@storybook/react": "^8.6.11",
     "@storybook/react-vite": "^8.6.11",
     "@storybook/testing-library": "^0.2.1",
+    "chromatic": "^11.27.0",
     "storybook": "^8.6.11"
+  },
+  "dependencies": {
+    "@phosphor-icons/react": "^2.1.7"
   }
 }

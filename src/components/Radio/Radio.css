@@ -1,0 +1,132 @@
+.radio-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+
+.radio-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.radio-input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #57566e;
+  transition: all 0.2s ease;
+}
+
+.radio-input-container:hover:not(.disabled) {
+  color: #0303ff;
+}
+
+.radio-input-container.error {
+  color: #e12122;
+}
+
+.radio-input-container.error:hover:not(.disabled) {
+  color: #e12122;
+}
+
+.radio-input-container.loading {
+  color: #0303ff;
+}
+
+.radio-input-container.disabled {
+  color: #9595a3;
+  cursor: not-allowed;
+}
+
+.radio-input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.radio-input:checked + .radio-input-container {
+  color: #0303ff;
+}
+
+.radio-input:checked + .radio-input-container.error {
+  color: #e12122;
+}
+
+.radio-input:checked + .radio-input-container.disabled {
+  color: #9595a3;
+}
+
+.radio-label {
+  font-size: 14px;
+  color: #25252d;
+  cursor: pointer;
+  user-select: none;
+}
+
+.radio-label.disabled {
+  color: #9595a3;
+  cursor: not-allowed;
+}
+
+.required {
+  color: #e12122;
+  margin-left: 2px;
+}
+
+.helper-text {
+  font-size: 12px;
+  color: #57566e;
+  margin-left: 24px;
+}
+
+.helper-text.error {
+  color: #e12122;
+}
+
+/* Small size */
+.radio-input-container.small {
+  width: 16px;
+  height: 16px;
+}
+
+.radio-input-container.small + .radio-label {
+  font-size: 14px;
+}
+
+/* Medium size */
+.radio-input-container.medium {
+  width: 20px;
+  height: 20px;
+}
+
+.radio-input-container.medium + .radio-label {
+  font-size: 14px;
+}
+
+/* Large size */
+.radio-input-container.large {
+  width: 24px;
+  height: 24px;
+}
+
+.radio-input-container.large + .radio-label {
+  font-size: 16px;
+}
+
+.spinning {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} 

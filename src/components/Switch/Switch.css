@@ -1,0 +1,275 @@
+.switch-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+
+.switch-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.switch-input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #57566e;
+  transition: all 0.2s ease;
+}
+
+.switch-input-container:hover:not(.disabled) {
+  color: #0303ff;
+}
+
+.switch-input-container.error {
+  color: #e12122;
+}
+
+.switch-input-container.error:hover:not(.disabled) {
+  color: #e12122;
+}
+
+.switch-input-container.loading {
+  color: #0303ff;
+}
+
+.switch-input-container.disabled {
+  color: #9595a3;
+  cursor: not-allowed;
+}
+
+.switch-input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.switch-track {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #cdcdd2;
+  border-radius: 9999px;
+  transition: all 0.2s ease;
+}
+
+.switch-input:checked + .switch-track {
+  background-color: #0303ff;
+}
+
+.switch-input:checked + .switch-track.error {
+  background-color: #e12122;
+}
+
+.switch-input:checked + .switch-track.disabled {
+  background-color: #9595a3;
+}
+
+.switch-track::before {
+  content: '';
+  position: absolute;
+  left: 2px;
+  background-color: #fefefe;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.switch-input:checked + .switch-track::before {
+  transform: translateX(100%);
+}
+
+.switch-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.switch-label.disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.switch-label .label-text {
+  font-size: 14px;
+  color: var(--color-gray-600);
+}
+
+.switch-label:hover:not(.disabled) .label-text {
+  color: var(--color-primary-500);
+}
+
+.switch-label.error .label-text {
+  color: var(--color-error-500);
+}
+
+.switch-label.error:hover:not(.disabled) .label-text {
+  color: var(--color-error-500);
+}
+
+.switch-label.checked .label-text {
+  color: var(--color-primary-500);
+}
+
+.switch-label.disabled .label-text {
+  color: var(--color-gray-500);
+}
+
+.required {
+  color: #e12122;
+  margin-left: 2px;
+}
+
+.helper-text {
+  font-size: 12px;
+  color: var(--color-gray-700);
+  margin-top: 4px;
+}
+
+.helper-text.error {
+  color: var(--color-error-500);
+}
+
+/* Small size */
+.switch-input-container.small .switch-track {
+  width: 28px;
+  height: 16px;
+}
+
+.switch-input-container.small .switch-track::before {
+  width: 12px;
+  height: 12px;
+}
+
+.switch-input-container.small + .switch-label {
+  font-size: 14px;
+}
+
+/* Medium size */
+.switch-input-container.medium .switch-track {
+  width: 36px;
+  height: 20px;
+}
+
+.switch-input-container.medium .switch-track::before {
+  width: 16px;
+  height: 16px;
+}
+
+.switch-input-container.medium + .switch-label {
+  font-size: 14px;
+}
+
+/* Large size */
+.switch-input-container.large .switch-track {
+  width: 44px;
+  height: 24px;
+}
+
+.switch-input-container.large .switch-track::before {
+  width: 20px;
+  height: 20px;
+}
+
+.switch-input-container.large + .switch-label {
+  font-size: 16px;
+}
+
+.spinning {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.switch {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: var(--color-gray-400);
+  transition: all 0.2s ease;
+}
+
+.switch.checked {
+  background-color: var(--color-primary-500);
+}
+
+.switch.error {
+  background-color: var(--color-error-500);
+}
+
+.switch.disabled {
+  background-color: var(--color-gray-500);
+}
+
+.switch::before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--color-gray-50);
+  transition: all 0.2s ease;
+}
+
+.switch.checked::before {
+  left: 22px;
+}
+
+.switch.error::before {
+  background-color: var(--color-gray-50);
+}
+
+.switch.disabled::before {
+  background-color: var(--color-gray-50);
+}
+
+/* Small size */
+.switch.small {
+  width: 32px;
+  height: 16px;
+}
+
+.switch.small::before {
+  width: 12px;
+  height: 12px;
+  top: 2px;
+  left: 2px;
+}
+
+.switch.small.checked::before {
+  left: 18px;
+}
+
+/* Large size */
+.switch.large {
+  width: 48px;
+  height: 24px;
+}
+
+.switch.large::before {
+  width: 20px;
+  height: 20px;
+  top: 2px;
+  left: 2px;
+}
+
+.switch.large.checked::before {
+  left: 26px;
+} 
