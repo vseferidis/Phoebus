@@ -5,22 +5,22 @@
 
 .datepicker-input {
   padding: 8px 12px;
-  border: 1px solid #cdcdd2;
+  border: 1px solid var(--color-gray-300);
   border-radius: 8px;
-  background-color: #fefefe;
-  color: #25252d;
+  background-color: var(--color-white);
+  color: var(--color-gray-900);
   cursor: pointer;
   min-width: 200px;
   font-size: 14px;
 }
 
 .datepicker-input:hover:not(.disabled) {
-  border-color: #0303ff;
+  border-color: var(--color-primary-500);
 }
 
 .datepicker-input.disabled {
-  background-color: #f3f3f5;
-  color: #9595a3;
+  background-color: var(--color-gray-100);
+  color: var(--color-gray-500);
   cursor: not-allowed;
 }
 
@@ -29,8 +29,8 @@
   top: 100%;
   left: 0;
   margin-top: 4px;
-  background-color: #fefefe;
-  border: 1px solid #cdcdd2;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gray-300);
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 1000;
@@ -39,7 +39,7 @@
 
 .datepicker-calendar-header {
   padding: 12px;
-  border-bottom: 1px solid #e9e9ec;
+  border-bottom: 1px solid var(--color-gray-200);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -48,12 +48,12 @@
 .datepicker-calendar-header button {
   background: none;
   border: none;
-  color: #0303ff;
+  color: var(--color-primary-500);
   cursor: pointer;
   padding: 4px 8px;
   border-radius: 4px;
 }
 
 .datepicker-calendar-header button:hover {
-  background-color: #eff4fc;
+  background-color: var(--color-primary-50);
 } 

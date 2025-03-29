@@ -14,41 +14,41 @@
 }
 
 .alert.success {
-  background-color: #edfff4;
-  border: 1px solid #82d7a1;
-  color: #016626;
+  background-color: var(--color-success-50);
+  border: 1px solid var(--color-success-300);
+  color: var(--color-success-700);
 }
 
 .alert.success .alert-title {
-  color: #019939;
+  color: var(--color-success-500);
 }
 
 .alert.warning {
-  background-color: #fffaf2;
-  border: 1px solid #f2d681;
-  color: #4e3b01;
+  background-color: var(--color-warning-50);
+  border: 1px solid var(--color-warning-300);
+  color: var(--color-warning-700);
 }
 
 .alert.warning .alert-title {
-  color: #ec980c;
+  color: var(--color-warning-500);
 }
 
 .alert.danger {
-  background-color: #fff1ef;
-  border: 1px solid #fa8e80;
-  color: #530a01;
+  background-color: var(--color-error-50);
+  border: 1px solid var(--color-error-300);
+  color: var(--color-error-700);
 }
 
 .alert.danger .alert-title {
-  color: #e12122;
+  color: var(--color-error-500);
 }
 
 .alert.info {
-  background-color: #ebf0fb;
-  border: 1px solid #a3c0ff;
-  color: #182c57;
+  background-color: var(--color-primary-50);
+  border: 1px solid var(--color-primary-300);
+  color: var(--color-primary-700);
 }
 
 .alert.info .alert-title {
-  color: #1751d0;
+  color: var(--color-primary-500);
 } 

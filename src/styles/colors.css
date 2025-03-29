@@ -1,4 +1,7 @@
 :root {
+  /* Base Colors */
+  --color-white: #ffffff;
+
   /* Primary Colors */
   --color-primary-50: #f0f0ff;
   --color-primary-100: #e0e0ff;

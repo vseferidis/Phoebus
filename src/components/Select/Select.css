@@ -33,7 +33,7 @@
 
 .select-container:focus-within {
   border-color: var(--color-primary-500);
-  box-shadow: 0 0 0 2px var(--color-primary-100);
+  box-shadow: 0 0 0 2px var(--color-primary-300);
 }
 
 .select-container.error {
